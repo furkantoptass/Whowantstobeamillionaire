@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC054"
+    tools:context=".TheEndActivity">
+
+    <TextView
+        android:id="@+id/txtuser_the"
+        android:layout_width="382dp"
+        android:layout_height="77dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#3136FD"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:typeface="normal"
+        app:fontFamily="cursive"
+        app:layout_constraintBottom_toTopOf="@+id/txtskor_the"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.908" />
+
+    <TextView
+        android:id="@+id/txtskor_the"
+        android:layout_width="392dp"
+        android:layout_height="234dp"
+        android:layout_marginBottom="120dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#3136FD"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:typeface="normal"
+        app:fontFamily="casual"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="183dp"
+        android:layout_height="149dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtuser_the"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.23"
+        app:srcCompat="@drawable/iconfinder_money_bag_45127" />
+
+    <Button
+        android:id="@+id/btnrestart"
+        android:layout_width="345dp"
+        android:layout_height="70dp"
+        android:text="RESTART "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtskor_the" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

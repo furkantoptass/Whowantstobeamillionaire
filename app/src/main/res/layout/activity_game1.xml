@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3E74FF"
+    tools:context=".GameActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="376dp"
+        android:layout_height="52dp"
+
+        android:background="#00FFFFFF"
+        android:indeterminate="false"
+
+
+        android:indeterminateOnly="false"
+        android:isScrollContainer="false"
+        android:progressTint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.008" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="413dp"
+        android:layout_height="295dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        app:layout_constraintVertical_bias="0.93">
+
+        <Button
+            android:id="@+id/btnY1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Yanlıs" />
+
+        <Button
+            android:id="@+id/btnY2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Yanlıs" />
+
+        <Button
+            android:id="@+id/idbtnD_2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Dogru" />
+
+        <Button
+            android:id="@+id/btnY3"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Yanlıs" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtskor"
+        android:layout_width="110dp"
+        android:layout_height="57dp"
+        android:text="$ 100"
+        android:textColor="#000E6B"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtuser"
+        android:layout_width="162dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:text="USERNAME"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#070707"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:typeface="normal"
+        app:fontFamily="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <TextView
+        android:id="@+id/txtsoru"
+        android:layout_width="409dp"
+        android:layout_height="181dp"
+        android:text="SORU"
+        android:textColor="#020202"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:typeface="normal"
+        app:fontFamily="serif"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtskor" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
